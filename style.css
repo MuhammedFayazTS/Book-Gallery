@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#003366;
+    font-family: 'Nunito', sans-serif;
+    height: 100vh;
+    /* background-image: url('https://c1.wallpaperflare.com/preview/127/366/443/library-book-bookshelf-read.jpg',); */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+}
+.headerimg{
+    width: 100%;
+    height: 300px;
+    background:  linear-gradient(to right,#0d0d0dc2 50%,#0d0d0dc2 50%),url(./images/trnava-university-BEEyeib-am8-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headerimg h1{
+    color: #efefef;
+    font-style: italic;
+    font-family: cursive;
+    font-weight: 200;
+    font-size: 30px;
+    opacity: .8;
+}
+.head{
+    font-size: 30px;
+}
+nav{
+    background-color: #001830;
+    position: sticky;
+    top: 0;
+    left: 0;
+    /* background-color: #FF9900; */
+    color: #FF9900;
+    padding: 8px;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    float: right;
+}
+nav ul li{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+    cursor: pointer;
+}
+nav ul li:hover{
+    color: #fbc779;
+}
+
+
+.rownav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.col1nav{
+    width: 20%;
+    float: left;
+    margin-left: 10px;
+}
+.col2nav{
+    float: right;
+    width: 60%;
+}
+section{
+    padding: 10px;
+}
+section h1{
+    text-align: center;
+    color: #FF9900;
+    margin: 20px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 800;
+}
+.main{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    position:relative;
+    /* background: #000; */
+}
+.cols{
+    width: 22%;
+    margin: 10px 0;
+    height: 380px;
+    background-color:#efefef13 ;
+    border: 1px solid #003366 ;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: #f55951; */
+}
+.colsimage{
+    display: flex;
+    align-items: center;
+    margin: 0px 70px;
+    width: 50%;
+    height: 200px;
+    box-shadow: 5px 5px 5px 5px #2424243e;
+    transition: 0.5s;
+}
+.cols h1{
+    margin: 10px;
+    margin-top: 25px;
+    font-size: larger;
+    /* background-color: #edd2cb28; */
+    text-align: center;
+    color: #EFEFEF ;
+    text-shadow: 5px 5px 5px #594b5734;
+    font-family: 'Fira Sans', sans-serif;
+}
+.cols button{
+    height: 45px;
+    width: 80%;
+    margin: 10px 10%;
+    background: transparent;
+    color: #FF9900;
+    border: 1px solid #FF9900;
+    transition: 0.5s;
+}
+.cols button:hover{
+    background-color: #ff9900e4;
+    color: #edd2cb;
+    font-size: 15px;
+}
+.colsimage:hover{
+    transform: scale(1.05);
+}
+footer{
+    width: 100%;
+    height: 50px;
+    background: #001e3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+footer h6{
+    color: #EFEFEF;
+}
+footer h6 a{
+    text-decoration: none;
+    color: #FF9900;
+}
+@media screen and (max-width:480px) {
+    body{
+        width: 100%;
+    }
+    .headerimg{
+        height: 250px;
+    }
+    
+    .main{
+        flex-direction: column;
+        height: auto;
+    }    
+    .cols{
+        margin: 10px 5%;
+        width: 90%;
+    }
+    .cols h1{
+        padding: 0 15px;
+    }
+    .rownav{
+        flex-direction: column;
+    }
+    .col1nav{
+        width: 100%;
+        text-align: center;
+        background: #001f3e;
+        margin-left: 0px;
+    }
+    .head{
+        font-size: 25px;
+    }
+    .col2nav{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    nav ul{
+        margin: 0;
+        width: 100%;
+        justify-content: space-evenly;
+        padding: 5px;
+    }
+}
